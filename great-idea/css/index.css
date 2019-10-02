@@ -194,6 +194,9 @@ header a{
 	.servicesContent{
 		flex-direction: column;
 	}
+	.servicesFooter{
+		justify-content: flex-start;
+	}
 	.contentCard{
 		width: 100%;
 	}
