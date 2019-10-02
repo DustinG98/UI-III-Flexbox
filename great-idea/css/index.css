@@ -84,6 +84,10 @@ header a{
 	color: grey;
 	text-decoration: none;
 }
+.services-header-img {
+	width: 100%;
+
+}
 
 h1{
 	font-size: 75px;
