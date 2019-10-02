@@ -78,7 +78,7 @@ header{
 header nav{
 	display: flex;
 	justify-content: space-evenly;
-	width: 100%;
+	width: 80%;
 }
 header a{
 	color: grey;
@@ -86,7 +86,6 @@ header a{
 }
 .services-header-img {
 	width: 100%;
-
 }
 
 .CTASection h1{
@@ -151,6 +150,7 @@ header a{
 	flex-wrap: wrap;
 }
 
+
 .contentCard{
 	margin: 1% 1%;
 	background-color: lightgrey;
@@ -170,8 +170,8 @@ header a{
 
 .servicesFooter{
 	display: flex;
-	flex-wrap: wrap;
 	justify-content: center;
+	flex-wrap: wrap;
 }
 
 .someFacts{
@@ -189,3 +189,21 @@ header a{
 .servicesFooter .copyright{
 	margin: 4% 0;
 }
+
+@media only screen and (max-width: 600px) {
+	.servicesContent{
+		flex-direction: column;
+	}
+	.contentCard{
+		width: 100%;
+	}
+	.logo{
+		max-width: 70%;
+	}
+	header nav{
+		width: 100%;
+	}
+	header a{
+		font-size: 10px;
+	}
+  }
