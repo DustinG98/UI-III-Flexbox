@@ -145,9 +145,18 @@ header a{
 	margin-top: 3%;
 }
 
+.services-info-img{
+	max-width: 40%;
+	align-self: flex-end;
+}
+
 .servicesContent{
 	display: flex;
 	flex-wrap: wrap;
+}
+
+nav a.active{
+	color: black;
 }
 
 
@@ -170,8 +179,9 @@ header a{
 
 .servicesFooter{
 	display: flex;
+	/* flex-direction: column; */
 	justify-content: center;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 }
 
 .someFacts{
@@ -186,23 +196,25 @@ header a{
 	line-height: 2;
 }
 
-.servicesFooter .copyright{
+.copyright{
 	margin: 4% 0;
 }
 
 @media only screen and (max-width: 600px) {
 	.servicesContent{
 		flex-direction: column;
-		align-items: center;
+		align-items: flex-start;
 	}
 	.servicesFooter{
 		justify-content: flex-start;
+		flex-wrap: wrap;
 	}
-	.contentCard{
-		width: 120%;
+	.contentCardSER{
+		width: 90%;
 	}
 	.logo{
-		max-width: 70%;
+		margin-left: 25%;
+		max-width: 80%;
 	}
 	header nav{
 		width: 100%;
@@ -213,5 +225,9 @@ header a{
 	.contentCardSER button{
 		width: 50%;
 	}
-
+	.services-info-img{
+		max-width: 80%;
+	}
+	body{
+		margin: 0% 2%;
   }
