@@ -49,7 +49,7 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 html, body {
@@ -64,3 +64,171 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+body{
+	margin: 0% 15%;
+	background-color: white;
+}
+header{
+	margin-top: 1%;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+header nav{
+	display: flex;
+	justify-content: space-evenly;
+	width: 80%;
+}
+header a{
+	color: grey;
+	text-decoration: none;
+}
+.services-header-img {
+	width: 100%;
+}
+
+.CTASection h1{
+	font-size: 75px;
+}
+
+.CTASection{
+	margin: 5% 0;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.CTA{
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.CTASection button{
+	width: 50%;
+	padding: 1% 0px;
+	color: grey;
+	background-color: white;
+	border: 2px solid grey;
+}
+
+.contentSection1{
+	display: flex;
+	margin-bottom: 3%;
+}
+
+.contentIMG img{
+	width: 100%;
+}
+
+.contentSection2{
+	display: flex;
+	margin: 3% 0;
+}
+.indexFooter {
+	line-height: 2;
+}
+
+.copyright{
+	text-align: center;
+}
+.services{
+	margin: 3% 0;
+}
+.services h1{
+	font-size: 40px;
+}
+.servicesIMG {
+	margin-top: 3%;
+}
+
+.services-info-img{
+	max-width: 40%;
+	align-self: flex-end;
+}
+
+.servicesContent{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+nav a.active{
+	color: black;
+}
+
+
+.contentCardSER{
+	margin: 1% 1%;
+	background-color: lightgrey;
+	width: 48%;
+	padding: 1% 1%;
+	border: 2px solid grey;
+}
+
+.contentCardSER button{
+	width: 25%;
+	padding: 1% 0px;
+	margin: 2% 0;
+	color: grey;
+	background-color: white;
+	border: 2px solid grey;
+}
+
+.servicesFooter{
+	display: flex;
+	/* flex-direction: column; */
+	justify-content: center;
+	flex-wrap: nowrap;
+}
+
+.someFacts{
+	width: 60%;
+	margin: 0 1%;
+}
+
+
+.servicesFooter ul{
+	margin-top: 4%;
+	margin-left: 4%;
+	line-height: 2;
+}
+
+.copyright{
+	margin: 4% 0;
+}
+
+@media only screen and (max-width: 600px) {
+	.servicesContent{
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.servicesFooter{
+		justify-content: flex-start;
+		flex-wrap: wrap;
+	}
+	.contentCardSER{
+		width: 90%;
+	}
+	.logo{
+		margin-left: 25%;
+		max-width: 80%;
+	}
+	header nav{
+		width: 100%;
+	}
+	header a{
+		font-size: 10px;
+	}
+	.contentCardSER button{
+		width: 50%;
+	}
+	.services-info-img{
+		max-width: 80%;
+	}
+	body{
+		margin: 0% 2%;
+	}
+  }
